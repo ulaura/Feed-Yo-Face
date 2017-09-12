@@ -20,7 +20,8 @@ label {
 }
 
 .walmartDiv, .amazonDiv {
-	min-height: 570px;
+	display: inline-block;
+	width: 90vw;
 	margin-top: 30px;
 }
 

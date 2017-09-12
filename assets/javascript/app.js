@@ -298,15 +298,13 @@ $(document).ready(function() {
           }).done(function(response) {
             console.log(response); //test
 
-            // to clear any previous cards in the div
-            $(".walmartDiv").empty();
-
+          
             // this for-loop is to iterate through the five responses from the Walmart API call
             for (var j = 0; j < response.items.length; j++) {
                   var imageSRC = response.items[j].imageEntities[j].mediumImage; 
                   console.log("Image src is " + imageSRC); //test
 
-                  var cardDiv = $("<div class=\"col s12 m3 walmartCardDiv\">");
+                  var cardDiv = $("<div class=\"col s12 m4 walmartCardDiv\">");
                   var card = $("<div class=\"card\">");
                   var cardImage = $("<div class=\"card-image\">");
                   var image = $("<img style='width: 50%;'>");
